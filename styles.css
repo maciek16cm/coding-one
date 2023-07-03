@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --green: #a2c29d;
+    --bgwhite: #e2e2e2;
+    --lightgreen: #cbd967;
+    --white: #fefffe;
+}
+
+@font-face {
+    font-family: "Grotta";
+    src: url(Grotta-Medium.otf);
+}
+
+@font-face {
+    font-family: "GrottaBold";
+    src: url(Grotta-Semibold.otf);
+}
+
+body{
+    background: var(--bgwhite);
+}
+
+.container{
+    margin: 80px auto 0;
+    background: var(--green);
+    border-radius: 40px 40px 0px 0px;
+    width: 82.5%;
+    height: 1000px;
+    z-index: 1;
+}
+
+header{
+    margin: 50px auto 0;
+    position: absolute;
+    width: 82.5%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 28px;
+    color: var(--white);
+    text-decoration: none;
+    font-family: "GrottaBold";
+    margin-left: 50px;
+}
+
+nav a{
+    font-size: 17px;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 25px;
+    font-family: "Grotta";
+}
+
+.hover {
+    display: inline-block;
+    padding: 12px;
+    background: transparent;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+  
+.hover:hover {
+    background: var(--white);
+    color: var(--green);
+}
+
+nav .register{
+    margin-left: 70px;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    padding: 12px 25px;
+}
+
+.content{
+    margin-left: 150px;
+    position: absolute;
+}
+
+.content h1{
+    color: var(--white);
+    font-family: "GrottaBold";
+    font-size: 60px;
+    margin-top: 220px;
+}
+
+.content p{
+    color: var(--white);
+    font-family: "Grotta";
+    font-size: 22.5px;
+    margin-top: 27.5px;
+    line-height: 160%;
+}
+
+.start{
+    margin-top: 30px;
+}
+
+.start a{
+    background: var(--lightgreen);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "GrottaBold";
+    color: #000;
+    border-radius: 50px;
+    padding: 15px 25px;
+}
+
+.hover2{
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+  
+.hover2:hover {
+    transform: scale(1.1);
+}
+
+main img{
+    width: 100%;
+    margin-top: 375px;
+}
